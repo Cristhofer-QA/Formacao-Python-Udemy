@@ -49,6 +49,9 @@ while True:
     sair = input('Deseja sair? [s]im ou [n]ão. ')
     sair = sair.lower()
     if sair:
+        while sair != 's' and sair != 'n':
+            sair = input('Deseja sair? [s]im ou [n]ão. ')
+            sair = sair.lower()
         if sair == 's':
             break
         elif sair == 'n':
