@@ -15,11 +15,11 @@ while i < len(frase):
     if letra_atual == ' ':
         continue
     
-    quantas_vezes_letra_apareceu_atual = frase.count(letra_atual)
+    qtd_letra_atual = frase.count(letra_atual)
     
-    if qtd_apareceu_mais_vezes < quantas_vezes_letra_apareceu_atual:
-        qtd_apareceu_mais_vezes = quantas_vezes_letra_apareceu_atual
+    if qtd_apareceu_mais_vezes < qtd_letra_atual:
+        qtd_apareceu_mais_vezes = qtd_letra_atual
         letra_apareceu_mais_vezes = letra_atual
     
-print(f'A letra que apareceu mais vezes foi {letra_apareceu_mais_vezes}.')
-print(f'Apareceu {qtd_apareceu_mais_vezes} ')
+print(f'A letra que apareceu mais vezes foi o "{letra_apareceu_mais_vezes}".')
+print(f'Apareceu {qtd_apareceu_mais_vezes} x')
